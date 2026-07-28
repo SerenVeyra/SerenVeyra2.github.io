@@ -1,1 +1,0 @@
-# SerenVeyra.github.io
