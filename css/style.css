@@ -123,3 +123,27 @@ button{
 cursor:pointer;
 
 }
+
+.dark{
+
+
+background:#111;
+
+color:white;
+
+
+}
+
+
+.dark nav{
+
+border-color:#444;
+
+}
+
+
+.dark nav a{
+
+color:white;
+
+}
