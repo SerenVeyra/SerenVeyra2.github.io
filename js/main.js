@@ -72,7 +72,11 @@ img.src = `${basePath}${src}`;
 
 function loadComponent(id, file){
 
-
+console.log(
+"正在加载:",
+`${basePath}/${file}`
+);
+    
 fetch(`${basePath}/${file}`)
 
 
