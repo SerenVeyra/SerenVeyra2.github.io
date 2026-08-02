@@ -1,10 +1,15 @@
+// ============================
 // 获取网站部署路径
-const basePath = window.location.pathname.split('/')[1] 
-    ? "/" + window.location.pathname.split('/')[1]
-    : "";
+// ============================
+
+const basePath = "/" + window.location.pathname.split("/")[1];
 
 
-// 自动修正网站子目录路径，修正导航
+
+// ============================
+// 修正导航路径
+// ============================
+
 function fixSiteLinks(){
 
 
@@ -12,18 +17,38 @@ const links =
 document.querySelectorAll(".nav-links a");
 
 
-links.forEach(link => {
+
+links.forEach(link=>{
 
 
-const href = link.getAttribute("href");
+let href =
+link.getAttribute("href");
 
 
-if(href.startsWith("/") && basePath){
+
+// 如果已经包含部署路径
+// 不再次添加
+
+if(
+href.includes(basePath)
+){
+
+return;
+
+}
 
 
-link.href =
-`${basePath}${href}`;
 
+// 处理站内链接
+
+if(
+href.startsWith("/")
+){
+
+link.setAttribute(
+"href",
+basePath + href
+);
 
 }
 
@@ -35,12 +60,17 @@ link.href =
 
 
 
+
+// ============================
 // 修正图片路径
+// ============================
+
 
 function fixImagePaths(){
 
 
-const images = document.querySelectorAll(
+const images =
+document.querySelectorAll(
 ".sidebar img"
 );
 
@@ -49,13 +79,21 @@ const images = document.querySelectorAll(
 images.forEach(img=>{
 
 
-const src = img.getAttribute("src");
+let src =
+img.getAttribute("src");
 
 
-if(src.startsWith("/") && basePath){
+
+if(
+src.startsWith("/") &&
+!src.includes(basePath)
+){
 
 
-img.src = `${basePath}${src}`;
+img.setAttribute(
+"src",
+basePath + src
+);
 
 
 }
@@ -68,28 +106,54 @@ img.src = `${basePath}${src}`;
 
 
 
-// 加载公共组件
 
-function loadComponent(id, file){
+// ============================
+// 加载组件
+// ============================
+
+function loadComponent(id,file){
+
+
+const url =
+basePath + "/" + file;
+
 
 console.log(
-"正在加载:",
-`${basePath}/${file}`
+"加载组件:",
+url
 );
-    
-fetch(`${basePath}/${file}`)
 
 
-.then(response => response.text())
+
+fetch(url)
 
 
-.then(data => {
+.then(response=>{
 
 
-document.getElementById(id).innerHTML = data;
+if(!response.ok){
+
+throw new Error(
+"组件不存在:"+url
+);
+
+}
 
 
-// 组件加载完成后修正路径
+return response.text();
+
+
+})
+
+
+.then(data=>{
+
+
+document.getElementById(id).innerHTML=data;
+
+
+
+// 组件加载完成后处理路径
 
 fixSiteLinks();
 
@@ -99,10 +163,13 @@ fixImagePaths();
 })
 
 
-.catch(error => {
+.catch(error=>{
 
 
-console.log("组件加载失败:", error);
+console.log(
+"组件加载失败:",
+error
+);
 
 
 });
@@ -111,8 +178,10 @@ console.log("组件加载失败:", error);
 }
 
 
+// ============================
+// 加载公共组件
+// ============================
 
-// 加载 Header
 
 loadComponent(
 "header-placeholder",
@@ -120,7 +189,6 @@ loadComponent(
 );
 
 
-// 加载 Sidebar
 
 loadComponent(
 "sidebar-placeholder",
