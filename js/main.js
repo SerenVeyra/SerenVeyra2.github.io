@@ -45,16 +45,17 @@ const images = document.querySelectorAll(
 );
 
 
-images.forEach(img => {
+
+images.forEach(img=>{
 
 
 const src = img.getAttribute("src");
 
 
-if(src.startsWith("/")){
+if(src.startsWith("/") && basePath){
 
 
-img.src = `/${siteRoot}${src}`;
+img.src = `${basePath}${src}`;
 
 
 }
