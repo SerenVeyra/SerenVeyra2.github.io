@@ -93,3 +93,15 @@ body.dark{
 --border-color:#333333;
 }
 
+/* 添加按钮样式 */
+#theme-toggle{
+
+border:none;
+
+background:none;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
