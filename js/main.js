@@ -127,8 +127,8 @@ loadComponent(
 // ============================
 // Dark Mode
 // ============================
-
 function initTheme(){
+
 const themeButton =
 document.getElementById(
 "theme-toggle"
@@ -137,10 +137,18 @@ document.getElementById(
 if(!themeButton){
 return;
 }
-
 themeButton.onclick=function(){
+
 document.body.classList.toggle(
 "dark"
 );
+  
+if(
+document.body.classList.contains("dark")
+){
+themeButton.innerHTML="🌙";
+}else{
+themeButton.innerHTML="☀";
+}
 };
 }
