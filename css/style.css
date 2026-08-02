@@ -1,149 +1,170 @@
-body{
-
-font-family:
-Arial,
-Helvetica,
-sans-serif;
+* {
+    box-sizing: border-box;
+}
 
 
-margin:0;
+body {
 
-background:#ffffff;
+    margin: 0;
 
-color:#222;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 
+    color: #333;
+
+    background: #fff;
+
+}
+
+
+/* 顶部导航 */
+
+header {
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+nav {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.logo {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+
+    align-items: center;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #333;
 
 }
 
 
 
-nav{
+/* 页面主体 */
 
-height:60px;
+.container {
 
-display:flex;
+    max-width: 1100px;
 
-justify-content:center;
+    margin: auto;
 
-gap:40px;
+    display: flex;
 
-align-items:center;
+    gap: 80px;
 
-
-border-bottom:
-1px solid #eee;
+    padding-top: 60px;
 
 }
 
 
 
-nav a{
+/* 左侧个人信息 */
 
-text-decoration:none;
+.sidebar {
 
-color:#333;
+    width: 280px;
+
+}
+
+
+.avatar {
+
+    width: 160px;
+
+    height: 160px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+.bio {
+
+    line-height: 1.8;
+
+    color: #666;
 
 }
 
 
 
-.container{
+/* 右侧内容 */
+
+main {
+
+    flex: 1;
+
+}
 
 
-display:flex;
+main h1 {
 
-max-width:1200px;
+    font-size: 40px;
 
-margin:auto;
+}
 
-padding:40px;
 
+main h2 {
+
+    margin-top: 45px;
+
+}
+
+
+.intro {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #555;
 
 }
 
 
 
-.sidebar{
+.card {
 
-width:280px;
+    border: 1px solid #ddd;
 
-padding-right:40px;
+    padding: 25px;
 
+    border-radius: 12px;
 
-}
-
-
-
-.avatar{
-
-width:120px;
-
-height:120px;
-
-border-radius:50%;
-
-
-object-fit:cover;
-
-
-}
-
-
-
-main{
-
-flex:1;
-
-}
-
-
-
-.card{
-
-
-border:
-1px solid #ddd;
-
-
-padding:20px;
-
-
-margin-bottom:20px;
-
-
-border-radius:10px;
-
-
-}
-
-
-
-button{
-
-cursor:pointer;
-
-}
-
-.dark{
-
-
-background:#111;
-
-color:white;
-
-
-}
-
-
-.dark nav{
-
-border-color:#444;
-
-}
-
-
-.dark nav a{
-
-color:white;
+    margin-top: 20px;
 
 }
