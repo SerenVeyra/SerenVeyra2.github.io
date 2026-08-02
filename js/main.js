@@ -1,5 +1,7 @@
-// 自动获取网站根目录，获取仓库名称
-const siteRoot = window.location.pathname.split('/')[1];
+// 获取网站部署路径
+const basePath = window.location.pathname.split('/')[1] 
+    ? "/" + window.location.pathname.split('/')[1]
+    : "";
 
 
 // 自动修正网站子目录路径，修正导航
@@ -70,7 +72,7 @@ img.src = `/${siteRoot}${src}`;
 function loadComponent(id, file){
 
 
-fetch(`/${siteRoot}/${file}`)
+fetch(`${basePath}/${file}`)
 
 
 .then(response => response.text())
