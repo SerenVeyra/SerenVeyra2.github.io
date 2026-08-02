@@ -117,7 +117,7 @@ color:#333;
 .container{
 
 
-max-width:1100px;
+max-width:1200px;
 
 
 margin:auto;
@@ -126,10 +126,10 @@ margin:auto;
 display:flex;
 
 
-gap:80px;
+gap:50px;
 
 
-padding-top:60px;
+padding-top:40px;
 
 
 }
@@ -152,10 +152,10 @@ width:280px;
 .avatar{
 
 
-width:160px;
+width:130px;
 
 
-height:160px;
+height:130px;
 
 
 border-radius:50%;
@@ -228,7 +228,7 @@ flex:1;
 main h1{
 
 
-font-size:40px;
+font-size:32px;
 
 
 }
