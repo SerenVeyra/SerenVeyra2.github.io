@@ -47,12 +47,6 @@ nav-links a：导航链接区域里的所有 <a> 超链接。
 text-decoration: none：去掉链接默认的下划线。
 color: var(--text-color)：文字颜色使用 CSS 变量，通常是页面主要文字颜色。 */
 
-.nav-links a{text-decoration:none;color:#333;}
-/* 注释：
-和上面是同一个选择器，属于重复定义。
-因为后面的规则会覆盖前面相同的属性，所以最终链接的颜色是 #333（深灰色）。
-实际项目中一般只保留一条即可，避免重复 */
-
 /* 主体布局 */
 .container{max-width:1200px; /*  整个内容区最大宽度为 1200 像素。*/
            margin:auto; /* 水平居中 */
