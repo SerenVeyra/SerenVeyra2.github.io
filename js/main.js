@@ -8,9 +8,8 @@ const basePath = window.location.pathname.split('/')[1]
 function fixSiteLinks(){
 
 
-const links = document.querySelectorAll(
-".nav-links a"
-);
+const links =
+document.querySelectorAll(".nav-links a");
 
 
 links.forEach(link => {
@@ -19,10 +18,11 @@ links.forEach(link => {
 const href = link.getAttribute("href");
 
 
-if(href.startsWith("/")){
+if(href.startsWith("/") && basePath){
 
 
-link.href = `/${siteRoot}${href}`;
+link.href =
+`${basePath}${href}`;
 
 
 }
