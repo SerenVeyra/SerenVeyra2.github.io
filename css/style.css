@@ -1,170 +1,283 @@
-* {
-    box-sizing: border-box;
-}
+*{
 
-
-body {
-
-    margin: 0;
-
-    font-family: "Helvetica Neue", Arial, sans-serif;
-
-    color: #333;
-
-    background: #fff;
+box-sizing:border-box;
 
 }
 
 
-/* 顶部导航 */
-
-header {
-
-    border-bottom: 1px solid #eee;
-
-}
+body{
 
 
-nav {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    height: 70px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-}
+margin:0;
 
 
-.logo {
+font-family:
 
-    font-size: 20px;
-
-    font-weight: bold;
-
-}
+"Helvetica Neue",
+Arial,
+sans-serif;
 
 
-.nav-links {
-
-    display: flex;
-
-    gap: 35px;
-
-    align-items: center;
-
-}
+color:#333;
 
 
-.nav-links a {
+background:#fff;
 
-    text-decoration: none;
-
-    color: #333;
 
 }
 
 
 
-/* 页面主体 */
+/* 顶部 */
 
-.container {
 
-    max-width: 1100px;
+header{
 
-    margin: auto;
 
-    display: flex;
+border-bottom:
 
-    gap: 80px;
+1px solid #eee;
 
-    padding-top: 60px;
+
+}
+
+
+nav{
+
+
+max-width:1100px;
+
+
+margin:auto;
+
+
+height:70px;
+
+
+display:flex;
+
+
+justify-content:space-between;
+
+
+align-items:center;
+
 
 }
 
 
 
-/* 左侧个人信息 */
-
-.sidebar {
-
-    width: 280px;
-
-}
+.logo{
 
 
-.avatar {
-
-    width: 160px;
-
-    height: 160px;
-
-    border-radius: 50%;
-
-    object-fit: cover;
-
-}
+font-size:20px;
 
 
-.bio {
+font-weight:bold;
 
-    line-height: 1.8;
-
-    color: #666;
 
 }
 
 
 
-/* 右侧内容 */
-
-main {
-
-    flex: 1;
-
-}
+.nav-links{
 
 
-main h1 {
-
-    font-size: 40px;
-
-}
+display:flex;
 
 
-main h2 {
-
-    margin-top: 45px;
-
-}
+gap:35px;
 
 
-.intro {
+align-items:center;
 
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    color: #555;
 
 }
 
 
 
-.card {
+.nav-links a{
 
-    border: 1px solid #ddd;
 
-    padding: 25px;
+text-decoration:none;
 
-    border-radius: 12px;
 
-    margin-top: 20px;
+color:#333;
+
+
+}
+
+
+
+
+
+/* 主体布局 */
+
+
+.container{
+
+
+max-width:1100px;
+
+
+margin:auto;
+
+
+display:flex;
+
+
+gap:80px;
+
+
+padding-top:60px;
+
+
+}
+
+
+
+/* 左侧 */
+
+
+.sidebar{
+
+
+width:280px;
+
+
+}
+
+
+
+.avatar{
+
+
+width:160px;
+
+
+height:160px;
+
+
+border-radius:50%;
+
+
+object-fit:cover;
+
+
+}
+
+
+
+.bio{
+
+
+line-height:1.8;
+
+
+color:#666;
+
+
+}
+
+
+
+.sidebar h3{
+
+
+margin-top:40px;
+
+
+}
+
+
+
+.sidebar ul{
+
+
+padding-left:20px;
+
+
+}
+
+
+
+.sidebar li{
+
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+/* 右侧 */
+
+
+main{
+
+
+flex:1;
+
+
+}
+
+
+
+main h1{
+
+
+font-size:40px;
+
+
+}
+
+
+
+main h2{
+
+
+margin-top:45px;
+
+
+}
+
+
+
+.intro{
+
+
+font-size:18px;
+
+
+line-height:1.8;
+
+
+color:#555;
+
+
+}
+
+
+
+
+
+.card{
+
+
+border:
+
+1px solid #ddd;
+
+
+padding:25px;
+
+
+border-radius:12px;
+
+
+margin-top:20px;
+
 
 }
