@@ -2,7 +2,7 @@
 // 获取网站部署路径
 // ============================
 
-const basePath = "/" + window.location.pathname.split("/")[1];
+const basePath = "/SerenVeyra2.github.io";
 
 
 
@@ -25,16 +25,13 @@ let href =
 link.getAttribute("href");
 
 
-
 // 如果已经包含部署路径
 // 不再次添加
 
 if(
-href.includes(basePath)
+href.startsWith(basePath)
 ){
-
 return;
-
 }
 
 
