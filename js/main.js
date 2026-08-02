@@ -1,6 +1,27 @@
 // 自动获取网站根目录
 const siteRoot = window.location.pathname.split('/')[1];
 
+// 自动修正网站子目录路径
+
+function fixSiteLinks(){
+
+const links = document.querySelectorAll(
+".nav-links a"
+);
+
+links.forEach(link => {
+
+const href = link.getAttribute("href");
+
+if(href.startsWith("/")){
+
+link.href = `/${siteRoot}${href}`;
+
+}
+});
+}
+
+
 // 加载公共组件
 function loadComponent(id, file){
 
@@ -10,7 +31,13 @@ fetch(`/${siteRoot}/${file}`)
 
 .then(data => {
 
+
 document.getElementById(id).innerHTML = data;
+
+
+// 组件加载完成后修正路径
+fixSiteLinks();
+
 
 })
 
