@@ -261,6 +261,17 @@ serenveyra.github.io/SerenVeyra2.github.io/
 | 2026-08-09 | 创建开发日志，整理网站当前状态 |
 
 
+---
+
+# Version History
+
+
+|版本|日期|内容|
+|-|-|-|
+|v0.1|2026-08-09|完成网站基础框架搭建|
+
+
+
 
 
 
