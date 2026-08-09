@@ -134,6 +134,57 @@ font-size:18px;
 main{flex:1;}  /* flex: 1 表示右侧内容区占据剩余所有宽度。这样左侧固定 280px，右侧会自动填满剩余空间 */
 main h1{font-size:42px;font-weight:700;margin-bottom:20px;} /* h1（页面大标题）字体大小 32 像素。 */
 main h2{margin-top:45px;} /* h2（小标题）上方留 45px 间距，用于区分不同章节 */
+
+/* =========================
+   CV 页面章节标题
+========================= */
+
+
+.main-content h2{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    margin-top:45px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+/* 标题左侧蓝色竖线 */
+
+.main-content h2::before{
+
+    content:"";
+
+    width:4px;
+
+    height:24px;
+
+    background:#0969da;
+
+    border-radius:2px;
+
+}
+
+/* CV章节分隔 */
+
+.main-content h2{
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
 .intro{font-size:18px;line-height:1.8;color:var(--secondary-text);}  /* 字号 18px，行高 1.8，颜色是次要文字色。通常放在标题下面，作为一段引导性介绍文字。 */
 .card{
 
