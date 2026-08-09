@@ -394,17 +394,29 @@ color:var(--text-color);
 ========================= */
 
 
+/* =========================
+   Skills 技能模块
+   参考 GitHub CV 风格
+========================= */
+
+
 .skills-group{
 
-    margin-bottom:25px;
+    margin-bottom:24px;
 
 }
 
 
 
+/* 技能分类标题 */
+
 .skills-label{
 
-    font-weight:700;
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#333;
 
     margin-bottom:12px;
 
@@ -412,15 +424,40 @@ color:var(--text-color);
 
 
 
+/* 技能标签区域 */
+
 .skills-tags{
 
     display:flex;
 
     flex-wrap:wrap;
 
-    gap:10px;
+    gap:8px;
 
 }
+
+
+
+/* 单个技能 */
+
+.skill-tag{
+
+    background:#ddf4ff;
+
+    color:#0969da;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    line-height:1.5;
+
+}
+
 
 
 
