@@ -73,7 +73,16 @@ main{flex:1;}  /* flex: 1 表示右侧内容区占据剩余所有宽度。这样
 main h1{font-size:42px;font-weight:700;margin-bottom:20px;} /* h1（页面大标题）字体大小 32 像素。 */
 main h2{margin-top:45px;} /* h2（小标题）上方留 45px 间距，用于区分不同章节 */
 .intro{font-size:18px;line-height:1.8;color:var(--secondary-text);}  /* 字号 18px，行高 1.8，颜色是次要文字色。通常放在标题下面，作为一段引导性介绍文字。 */
-.card{border:1px solid var(--border-color);padding:25px;border-radius:12px;margin-top:20px;} /* 卡片带 1 像素边框，颜色由 CSS 变量 --border-color 控制（一般是浅灰）。内边距 25px。圆角 12px，让卡片显得柔和。上方间距 20px，用来放文章、项目列表、帖子等内容。 */
+.card{
+
+border-left:3px solid #333;
+
+padding:20px;
+
+margin-top:25px;
+
+}
+ /* 卡片带 1 像素边框，颜色由 CSS 变量 --border-color 控制（一般是浅灰）。内边距 25px。圆角 12px，让卡片显得柔和。上方间距 20px，用来放文章、项目列表、帖子等内容。 */
 
 /* 手机端适配 */
 @media(max-width:768px)
