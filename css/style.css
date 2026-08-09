@@ -173,3 +173,310 @@ cursor:pointer;
 color:var(--text-color);
 
 }
+
+
+/* =========================
+   CV 页面展示优化
+   仅调整视觉排版
+========================= */
+
+
+/* CV 页面标题 */
+
+.page-title{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* CV 主体区域 */
+
+.main-content{
+
+    flex:1;
+
+}
+
+
+
+/* CV章节标题 */
+
+.main-content h2{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    margin-top:55px;
+
+    margin-bottom:25px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/* =========================
+   工作经历
+========================= */
+
+
+/* 每段经历 */
+
+.exp-item{
+
+    padding-bottom:40px;
+
+    margin-bottom:45px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/* 职位 + 时间 */
+
+.exp-title-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+/* 时间 */
+
+.exp-time{
+
+    font-size:14px;
+
+    color:var(--secondary-text);
+
+    min-width:120px;
+
+}
+
+
+
+/* 职位名称 */
+
+.exp-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+
+/* 公司名称 */
+
+.exp-company{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+
+
+/* 公司介绍 */
+
+.exp-desc{
+
+    font-size:15px;
+
+    color:var(--secondary-text);
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* 工作内容列表 */
+
+.exp-list{
+
+    padding-left:20px;
+
+    line-height:1.9;
+
+}
+
+
+
+.exp-list li{
+
+    margin-bottom:14px;
+
+}
+
+
+
+/* =========================
+   项目经历
+========================= */
+
+
+.project-item{
+
+    padding:25px 0;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+.project-title{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.project-tagline{
+
+    color:var(--secondary-text);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.project-list{
+
+    line-height:1.9;
+
+}
+
+
+
+.project-list li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+/* =========================
+   技能标签
+========================= */
+
+
+.skills-group{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.skills-label{
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.skills-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+
+.skill-tag{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================
+   证书
+========================= */
+
+
+.cert-list{
+
+    line-height:2;
+
+}
+
+
+
+/* =========================
+   移动端适配
+========================= */
+
+
+@media(max-width:768px){
+
+
+.exp-title-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:5px;
+
+}
+
+
+.page-title{
+
+    font-size:30px;
+
+}
+
+
+}
