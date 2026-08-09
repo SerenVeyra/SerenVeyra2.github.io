@@ -23,7 +23,19 @@ a{color:#333;text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 /* 顶部 */
-header{border-bottom:1px solid var(--border-color);} /* border-bottom：底部加一条 1像素 的边框线 */
+header{
+
+    border-bottom:1px solid var(--border-color);
+
+    position:sticky;
+
+    top:0;
+
+    background:white;
+
+    z-index:1000;
+
+}
 
 nav{max-width:1100px;margin:auto;height:70px;display:flex;justify-content:space-between;align-items:center;}
 /* 注释：
@@ -49,14 +61,35 @@ text-decoration: none：去掉链接默认的下划线。
 color: var(--text-color)：文字颜色使用 CSS 变量，通常是页面主要文字颜色。 */
 
 /* 主体布局 */
-.container{max-width:1050px; /*  整个内容区最大宽度为 1200 像素。*/
-           margin:auto; /* 水平居中 */
-           display:flex; /* 使用 Flexbox 弹性布局，让左侧和右侧并排 */
-           gap:70px; /* 左右两块之间的间距为 50 像素。 */
-           padding-top:70px;}  /* 顶部留白 40 像素*/
+.container{
 
+max-width:1100px;
+
+margin:auto;
+
+display:flex;
+
+gap:60px;
+
+padding-top:40px;
+
+align-items:flex-start;
+
+}
 /* 左侧 */
-.sidebar{width:300px;text-align:center;}  /* 固定宽度 280 像素，不跟随屏幕伸缩*/
+
+.sidebar{
+
+    width:300px;
+flex-shrink:0; 
+text-align:center;
+    position:sticky;
+
+    top:100px;
+
+    height:max-content;
+
+}
 
 .avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:25px;} 
 /* 设置头像宽高都是 130 像素；border-radius: 50%：把图片变成圆形；object-fit: cover：图片会等比缩放并裁剪，填满整个圆形而不变形。*/
@@ -133,28 +166,47 @@ font-size:18px;
 /* 右侧 */
 main{flex:1;}  /* flex: 1 表示右侧内容区占据剩余所有宽度。这样左侧固定 280px，右侧会自动填满剩余空间 */
 main h1{font-size:42px;font-weight:700;margin-bottom:20px;} /* h1（页面大标题）字体大小 32 像素。 */
-main h2{margin-top:45px;} /* h2（小标题）上方留 45px 间距，用于区分不同章节 */
 
 /* =========================
-   CV 页面章节标题
+CV章节标题
 ========================= */
-
 
 .main-content h2{
 
-    font-size:26px;
+font-size:26px;
 
-    font-weight:700;
+font-weight:700;
 
-    margin-top:45px;
+margin-top:55px;
 
-    margin-bottom:20px;
+margin-bottom:25px;
 
-    display:flex;
+padding-bottom:12px;
 
-    align-items:center;
+border-bottom:1px solid var(--border-color);
 
-    gap:12px;
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+
+/* 左侧蓝色标记 */
+
+.main-content h2::before{
+
+content:"";
+
+width:4px;
+
+height:24px;
+
+background:#0969da;
+
+border-radius:2px;
 
 }
 
@@ -510,21 +562,6 @@ color:var(--text-color);
 }
 
 
-
-
-.skill-tag{
-
-    display:inline-block;
-
-    padding:6px 14px;
-
-    border:1px solid var(--border-color);
-
-    border-radius:20px;
-
-    font-size:14px;
-
-}
 
 
 
