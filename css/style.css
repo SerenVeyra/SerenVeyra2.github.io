@@ -56,13 +56,75 @@ color: var(--text-color)：文字颜色使用 CSS 变量，通常是页面主要
            padding-top:70px;}  /* 顶部留白 40 像素*/
 
 /* 左侧 */
-.sidebar{width:300px;}  /* 固定宽度 280 像素，不跟随屏幕伸缩*/
+.sidebar{width:300px;text-align:center;}  /* 固定宽度 280 像素，不跟随屏幕伸缩*/
 
-.avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;} 
+.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:25px;} 
 /* 设置头像宽高都是 130 像素；border-radius: 50%：把图片变成圆形；object-fit: cover：图片会等比缩放并裁剪，填满整个圆形而不变形。*/
 
-.bio{line-height:1.8;color:var(--secondary-text);}
-/* line-height: 1.8：行高是字体大小的 1.8 倍，阅读更舒适；color: var(--secondary-text)：文字颜色使用 CSS 变量 --secondary-text，通常是次要文字颜色（例如灰色） */
+/* 名字 */
+
+.name{
+
+text-align:center;
+
+margin-top:25px;
+
+}
+
+
+/* 个性签名 */
+
+.signature{
+
+text-align:center;
+
+font-size:16px;
+
+line-height:1.8;
+
+color:var(--secondary-text);
+
+margin-top:15px;
+
+}
+
+
+
+/* 联系方式 */
+
+.contact{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin-top:25px;
+
+}
+
+
+
+.contact a{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+font-size:15px;
+
+}
+
+
+.contact span{
+
+font-size:18px;
+
+}
+
 
 .sidebar h3{margin-top:40px;} /* 侧边栏里的 h3 标题上方留 40px 间距 */
 .sidebar ul{padding-left:20px;}  /* ul 左边缩进 20px */
