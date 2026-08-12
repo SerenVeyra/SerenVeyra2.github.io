@@ -632,3 +632,29 @@ font-weight:600;
 
 
 }
+.project-title a{
+
+    margin-left:12px;
+
+    font-size:13px;
+
+    color:#666;
+
+    border:1px solid #d0d7de;
+
+    padding:3px 10px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+}
+
+
+.project-title a:hover{
+
+    background:#f6f8fa;
+
+    text-decoration:none;
+
+}
