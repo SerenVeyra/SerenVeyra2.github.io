@@ -604,5 +604,31 @@ line-height:1.5;
 
 }
 
+    /* =====================
+技能文字展示
+===================== */
+
+
+.skills-block{
+
+font-size:15px;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+color:var(--secondary-text);
+
+}
+
+
+.skills-block strong{
+
+color:var(--text-color);
+
+font-weight:600;
+
+}
+
 
 }
