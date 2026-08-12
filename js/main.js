@@ -50,7 +50,7 @@ function fixImagePaths(){
 
 const images =
 document.querySelectorAll(
-".sidebar img"
+"img"
 );
 
 images.forEach(img=>{
