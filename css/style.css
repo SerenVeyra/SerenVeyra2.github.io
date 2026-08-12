@@ -658,3 +658,47 @@ font-weight:600;
     text-decoration:none;
 
 }
+
+.project-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.project-image img {
+
+    max-width:100%;
+    border-radius:12px;
+
+}
+
+
+.image-note {
+
+    font-size:14px;
+    color:#777;
+
+}
+
+
+
+.project-link {
+
+    margin:15px 0;
+
+}
+
+
+.project-link a {
+
+    color:#2563eb;
+    text-decoration:none;
+
+}
+
+
+.project-link a:hover {
+
+    text-decoration:underline;
+
+}
